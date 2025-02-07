@@ -1,0 +1,8 @@
+numpy
+pandas
+setuptools
+joblib
+matplotlib
+plotly
+scipy
+llm

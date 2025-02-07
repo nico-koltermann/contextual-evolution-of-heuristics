@@ -1,0 +1,20 @@
+# Your API Keys
+export OPENAI_API_KEY=sk-123456 # Replace with your actual key
+export OPENROUTER_API_KEY=sk-123456 # Replace with your actual key
+export DEEPSEEK_API_KEY=sk-123456 # Replace with your actual key
+
+# Problem selection (Choose from: 'tsp_construct', 'bp_online', 'multibay_reshuffle', 'cap_set')
+export EOH_PROBLEM="multibay_reshuffle"
+
+# Model Selection
+# "Local" models: ['gemma2:27b', 'Qwen2.5-Coder:32b']
+# "Remote" models: ['gpt-4o', 'DeepSeekV3:685b', ]
+export MODEL_NAME="gemma2:27b"
+
+####################################################
+# If you run the project local
+
+# Path configurations
+export INSTANCES_PATH=""
+export OUTPUT_PATH=""
+export BASE_PATH=""

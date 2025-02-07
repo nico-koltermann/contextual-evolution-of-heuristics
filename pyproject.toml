@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = [
+  "src.eoh",
+  "src.eoh.utils",
+  "src.eoh.problems",
+  "src.eoh.problems.optimization",
+  "src.eoh.problems.optimization.bp_online",
+  "src.eoh.problems.optimization.cap_set",
+  "src.eoh.problems.optimization.tsp_greedy",
+  "src.eoh.problems.optimization.multibay_reshuffle",
+  "src.eoh.llm",
+  "src.eoh.methods",
+  "src.eoh.methods.eoh",
+  "src.eoh.methods.management",
+  "src.eoh.methods.selection",
+  "src.bay",
+  "src.util",
+  "src.preprocessing",
+]
+
+[project]
+name = "heuristic_evolution"
+dynamic = [
+  "version",
+]
+description = "Evolution of Heuristics by LLMs"
+readme = "README.md"
+requires-python = ">=3.10"
+
+classifiers = [
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+  "absl-py==2.0.0",
+  "click==8.1",
+  "llm==0.12",
+  "python-dotenv==1.0.0",
+  "scipy",
+  "numpy==1.26.2",
+  "input-parser==0.1.0",
+  "joblib",
+  "plotly",
+  "numba"
+]
+
+[project.scripts]
+eoh = "src.eoh.__main__:main"
