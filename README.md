@@ -3,21 +3,31 @@
 [![Build](https://github.com/nico-koltermann/contextual-evolution-of-heuristics/actions/workflows/build.yaml/badge.svg)](https://github.com/nico-koltermann/contextual-evolution-of-heuristics/actions/workflows/build.yaml)
 [![Docker](https://github.com/nico-koltermann/contextual-evolution-of-heuristics/actions/workflows/docker.yaml/badge.svg)](https://github.com/nico-koltermann/contextual-evolution-of-heuristics/actions/workflows/docker.yaml)
 
-Optimal block stacking warehouse reshuffling (premarshalling) for layouts with multiple bays.
+This repository contains the codebase of Contextual Evolution of Heuristics (CEoH), an evolutionary framework that generates heuristics to solve combinatorial optimization problems.
+CEoH extends EOH ([EoH-Paper](https://arxiv.org/abs/2401.02051)) with an additional optimization problem description in the prompt to leverage in-context learning.
+The additional problem context helps LLMs generate efficient heuristics for niche optimization problems.
 
-## Adaptation of EoH
+CEoH is applied to the unit-load pre-marshalling problem as and example case.
 
-The base Idea of EoH is adapdet by the repository: 
+## Prompt Comparison
+[prompt_e1.pdf](https://github.com/user-attachments/files/18796246/prompt_e1.pdf)
+
+
+
+## Adaptation of EoH Repository
+
+The base idea of EoH is adapted from this repository: 
 [EoH-Repo](https://github.com/FeiLiu36/EoH) by Fei Liu (fliu36-c@my.cityu.edu.hk) et. al. 
 licensed under the MIT License. The original code has been modified. 
 The original license is retained in the respective files.
 
-## Multibay reshuffeling 
+## Multibay Unit-load Pre-marshalling
 
 Previous work: 
+- [Solving the unit-load pre-marshalling problem in block stacking storage systems with multiple access directions](https://www.sciencedirect.com/science/article/abs/pii/S0377221723006744)
+- [Sorting multibay block stacking storage systems](https://doi.org/10.48550/arXiv.2405.04847)
 - [Sorting Multibay Block Stacking Storage Systems with Multiple Robots](https://doi.org/10.1007/978-3-031-71993-6_3)
-- [Sorting multibay block stacking storage systems](    
-https://doi.org/10.48550/arXiv.2405.04847)
+
 
 ### **The Unit-Load Pre-Marshalling Problem (UPMP)**  
 
