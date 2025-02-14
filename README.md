@@ -9,7 +9,10 @@ The additional problem context helps LLMs generate efficient heuristics for nich
 
 CEoH is applied to the unit-load pre-marshalling problem as and example case.
 
-## Prompt Comparison
+## Prompt Example
+This PDF show a CEoH prompt for propmt Strategy E1 to generate a completely different heuristic based on parent heuristics selected from the current population.
+The prompt includes (1) task description - brown, (2) additional problem description (new in CEoH) - red, (3) parent heuristic(s) - green, (4) strategy-specific output instructions - blue, and (5) additional instructions - purple.
+
 [prompt_e1.pdf](https://github.com/user-attachments/files/18796246/prompt_e1.pdf)
 
 
