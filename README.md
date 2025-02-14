@@ -52,11 +52,7 @@ This makes the problem especially challenging due to the **restricted movement p
 
 We prepared a docker for automatic configuration for GPT-4 Model:
 
-1. Make sure to have a ```.env```file exists with your OPEN_API key
-
-```bash
-export OPENAI_API_KEY=sk-123456 # Replace with your actual key
-```
+1. **Create a `.env` file** with necessary configurations (see CEoH Configuration]).
 
 2. Create the docker container ```docker build -t ceoh_runner .```
 
@@ -64,14 +60,9 @@ export OPENAI_API_KEY=sk-123456 # Replace with your actual key
 
 ### **Steps to Run locally**  
 
-0. Install required dependencies (environment.yml with conda)
+1. Install required dependencies (environment.yml with conda)
 
-1. **Select the problem to solve**:  
-   - If you want to create a new problem, refer to:  
-     ```src/eoh/problems/optimization```
-   - If you are working on **multibay reshuffling**, as presented in this work, create an experiment file as described [here](./eoh_experiment/README.md).  
-
-2. **Create a `.env` file** with necessary configurations (see [CEoH Config](#ceoh-config)).
+2.  **Create a `.env` file** with necessary configurations (see CEoH Configuration]).
 
 3. **Run the project** using:  
    ```bash
