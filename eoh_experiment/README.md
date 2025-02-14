@@ -6,11 +6,11 @@ Format:
 
 ```json
 {
-  "seed":       [0, 1, 2, 3, 4],
-  "bay":        [3, 4, 5, 6],
-  "warehouse":  [1],
-  "fill":       [0.4],
-  "priority":   [5],
+  "seed":       [0, 1, 2, 3, 4], # instance seed
+  "bay":        [3, 4, 5, 6], # bay layout
+  "warehouse":  [1], # warehouse layout
+  "fill":       [0.4], # fill percentage
+  "priority":   [5], # Number of priority classes
   "access_directions": "1000"
 }
 ```
