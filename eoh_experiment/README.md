@@ -11,7 +11,7 @@ Format:
   "warehouse":  [1], # warehouse layout
   "fill":       [0.4], # fill percentage
   "priority":   [5], # Number of priority classes
-  "access_directions": "1000"
+  "access_directions": "1000" # binary access directions north, east, south, west
 }
 ```
 
